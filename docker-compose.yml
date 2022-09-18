@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  react-architecture-nextjs:
+    container_name: react-architecture-nextjs-container
+    image: react-architecture-nextjs-img
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4100:3000
+    env_file:
+      - .env
